@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa História</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="memory-page">
+    <canvas id="heartsCanvas"></canvas>
+
+    <div class="memory-container">
+      <!-- Contador Regressivo -->
+      <div class="countdown-container">
+        <h2>Tempo Juntos</h2>
+        <div id="countdown">
+          <div><span id="years">0</span><span>Anos</span></div>
+          <div><span id="months">0</span><span>Meses</span></div>
+          <div><span id="days">0</span><span>Dias</span></div>
+          <div><span id="hours">0</span><span>Horas</span></div>
+        </div>
+      </div>
+
+      <!-- Player de Música com Spotify -->
+      <div class="audio-container">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/3Zwu2K0Qa5sT6teCCHPShP?utm_source=generator"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- Slideshow de Fotos -->
+      <div class="slideshow-container">
+        <div class="slideshow">
+          <img src="/fotos/1.jpg" class="active" />
+          <img src="/fotos/2.jpg" />
+          <img src="/fotos/3.jpg" />
+        </div>
+      </div>
+
+      <!-- Área de Texto -->
+      <div class="text-container">
+        <p id="memory-text">
+          Eu te amo minha vida queria muito casar contigo e ter uma família com
+          você 💖.
+        </p>
+      </div>
+    </div>
+
+    <script src="hearts.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

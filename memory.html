@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa História</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="memory-page">
+    <canvas id="heartsCanvas"></canvas>
+
+    <div class="memory-container">
+        <!-- Contador Regressivo -->
+        <div class="countdown-container">
+            <h2>Tempo Juntos</h2>
+            <div id="countdown">
+                <div><span id="years">0</span><span>Anos</span></div>
+                <div><span id="months">1</span><span>Meses</span></div>
+                <div><span id="days">14</span><span>Dias</span></div>
+                <div><span id="hours">5</span><span>Horas</span></div>
+            </div>
+        </div>
+
+        <!-- Player de Música Romântico -->
+        <div class="music-player">
+            <div class="song-info">
+                <div class="song-title">ARROCHADEIRA REMIX</div>
+                <div class="song-artist">EU TE AMO MEU AMOR EU FAÇO O Q VOCÊ GOSTA SABER Q E O TERROR.mp3</div>
+            </div>
+            
+            <div class="player-controls">
+                <button class="play-btn" id="playButton">▶</button>
+            </div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="volume-control">
+                <span class="volume-icon">🔊</span>
+                <input type="range" class="volume-slider" id="volumeControl" min="0" max="1" step="0.01" value="0.7">
+            </div>
+            
+            <audio id="romanticMusic">
+                <source src="/musica/EU TE AMO MEU AMOR EU FAÇO O Q VOCÊ GOSTA SABER Q E O TERROR - ( FAIXA ROSA ) - ARROCHADEIRA REMIX.mp3" type="audio/mpeg" />
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+
+        <!-- Slideshow de Fotos -->
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="/fotos/1.jpg" class="active" />
+                <img src="/fotos/2.jpg" />
+                <img src="/fotos/3.jpg" />
+            </div>
+        </div>
+
+        <!-- Área de Texto -->
+        <div class="text-container">
+            <p id="memory-text">
+                Eu te amo minha vida queria muito casar contigo e ter uma família com você 💖.
+            </p>
+        </div>
+    </div>
+
+    <script src="hearts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
